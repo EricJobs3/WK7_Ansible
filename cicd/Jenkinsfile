@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label 'node3' 
-        } 
-    }
+    agent any
     parameters {
         booleanParam defaultValue: false, name: 'blPackerShell'
         booleanParam defaultValue: false, name: 'blPackerAnsible'
